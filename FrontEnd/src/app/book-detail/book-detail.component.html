@@ -1,0 +1,16 @@
+<div class="book-detail-container">
+    <div class="book-detail">
+        <h3>{{ book.title }}</h3>
+        <div class="heading">Author: <p>{{ book.author }}</p>
+        </div>
+        <div class="heading">Description: <p>{{ book.description }}</p>
+        </div>
+        <div class="heading">Price: <p>{{ book.Price }}</p>
+        </div>
+        <button (click)="goToUpdate(book.id)">Update</button>
+        <button (click)="deleteBook(book.id)">Delete</button>
+    </div>
+
+
+
+</div>

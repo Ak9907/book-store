@@ -1,0 +1,12 @@
+<div class="book-list-container">
+
+    <div style="margin: 2rem; justify-content: center; display: flex;"><button style="height: 3rem; font: icon;"
+            (click)="goToAddBook()">Add New Book</button></div>
+    <div class="book-item" *ngFor="let book of books">
+        <h3>{{ book.title }}</h3>
+        <p>Author: {{ book.author }}</p>
+        <p>Price: {{ book.Price }}</p>
+        <button (click)="goToDetail(book.id)">More details</button>
+
+    </div>
+</div>
