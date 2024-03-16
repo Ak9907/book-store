@@ -78,8 +78,8 @@ app.post('/books/:id/delete', verifyToken, (req, res) => {
     res.status(200).send();
 });
 app.get("/", (req, res) => {
-    app.use(express.static(path.resolve(__dirname, "Frontend", "dist/simple-book-store-app")));
-    res.sendFile(path.resolve(__dirname, "Frontend", "dist/simple-book-store-app", "index.html"));
+    app.use(express.static(path.resolve(__dirname, "FrontEnd", "dist/simple-book-store-app")));
+    res.sendFile(path.resolve(__dirname, "FrontEnd", "dist/simple-book-store-app", "index.html"));
 });
 // server start
 app.listen(PORT, () => {
