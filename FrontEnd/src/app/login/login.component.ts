@@ -12,6 +12,7 @@ export class LoginComponent {
     username: '',
     password: ''
   };
+  errorMessage: string = '';
 
   constructor(
     private authService: AuthService,
@@ -24,6 +25,7 @@ export class LoginComponent {
         this.router.navigate(['books']);
       },
       error: () => {
+        this.errorMessage = "Invalid Credentials"
         console.log('Login failed');
       }
     });
